@@ -31,6 +31,8 @@
 		margin-top: 130px
 	footer .footer_rght_icon
 		margin-top: 130px
+	// .hamburger
+	// 	display: none	
 
 @media (max-width: 991px)
 	.fix_menu
@@ -110,7 +112,71 @@
 			margin-top: 220px		
 	.footer
 		&_rght_icon
-			margin-bottom: 15px			
+			margin-bottom: 15px		
+
+@media (max-width: 767px)
+	.fix_menu 
+		height: 50px
+		.menu
+			position: fixed
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			top: 0
+			left: -100%
+			whidth: 50%
+			margin-top: 50px
+			height: 100vh
+			background-color: rgba(0, 0, 0, 0.8)
+			transition: 0.6s all
+			&_active
+				left: 0
+			&_link
+				border: 0
+				font-size: 20px
+				padding-right: 0
+			&_item 
+				margin-top: 20px
+		.hamburger
+			height: 20px
+			width: 30px
+			position: absolute
+			right: 30px 
+			margin-top: 12px
+			div
+				height: 2px
+				background-color: #ffffff
+				margin-bottom: 8px
+	.head
+		&_logo
+			padding: 15px 0
+		.xs_hide
+			display: none	
+
+	.promo	
+		min-height: 300px
+		&_h1
+			font-size: 30px
+			margin-top: 130px
+		&_h2
+			font-size: 19px
+		p
+			font-size: 14px
+		&_btn
+			margin: 35px auto
+			height: 35px	
+	.advant
+		.advanteg
+			margin-top: 50px
+		.reason
+			font-size: 26px
+		.row_padd
+			display: flex
+	
+
+				
+
+
 
 
 
